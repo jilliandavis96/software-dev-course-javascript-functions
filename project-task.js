@@ -72,3 +72,46 @@ for (let i = 0; i < names.length; i++) {
 */
 
 // ✅ Your refactored code goes below this line!
+
+
+//Refactored Code with Reusable Functions
+//Function 1: Greet a user by name
+function greetUser(name){
+   return "Welcome, " + name +"!";
+};
+
+//Function 2: Calculate the sum of two numbers 
+function calculateSum(a, b) {
+   return a + b;
+};
+
+//Function 3: Calculate the product of two numbers
+function calculateProduct(a, b) {
+   return a * b;
+};
+
+//Function 4: Print all items in an array
+function printList(array) {
+   console.log("Names on the list:");
+   for (let i = 0; i < array.length; i++) {
+      console.log(array[i]);
+   }
+};
+
+// REFACTORED SCRIPT (USING FUNCTIONS)
+//Script 1: Greeting multiple users
+console.log(greetUser("Alice"));
+console.log(greetUser("Bob"));
+console.log(greetUser("Charlie"));
+
+//Script 2: Sum calculation
+let sumResult = calculateSum(num1, num2);
+console.log("The sum of " + num1 + " and " + num2 + " is " + sumResult);
+
+//Script 3: Product calculation
+let productResult = calculateProduct(num1, num2);
+console.log("The product of " + num1 + " and " + num2 + " is " + productResult);
+
+//Script 4: Print names from a list
+printList(names);
+
